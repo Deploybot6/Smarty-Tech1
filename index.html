@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Smarty-Tech</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <header>
+    <!-- Contenu du header si nécessaire -->
+  </header>
+
+  <ul class="navigation">
+    <li class="active">
+      <a href="#">
+        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+        <span class="text">Home</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+        <span class="text">Profil</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
+        <span class="text">Message</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <span class="icon"><ion-icon name="camera-outline"></ion-icon></span>
+        <span class="text">Photo</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+        <span class="text">Setting</span>
+      </a>
+    </li>
+  </ul>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script>
+    let list = document.querySelectorAll('.navigation li');
+
+    function activeLink() {
+      list.forEach((item) => 
+        item.classList.remove('active'));
+      this.classList.add('active');
+    }
+
+    list.forEach((item) =>
+      item.addEventListener('click', activeLink));
+  </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="search-container">
+        <button class="search-button">
+            <ion-icon name="search-outline"></ion-icon>
+        </button>
+    </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile with Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Profile Icon -->
+    <div class="profile-icon">
+        <ion-icon name="menu-outline" id="menu-icon"></ion-icon>
+    </div>
+
+    <!-- Side Menu -->
+    <div class="side-menu" id="side-menu">
+        <!-- Back Button -->
+        <div class="back-button" id="back-button">
+            <ion-icon name="arrow-back-outline"></ion-icon> 
+        </div>
+        <div class="menu-header">
+            <h2>Profil</h2>
+        </div>
+        <ul class="menu-options">
+            <li><ion-icon name="information-circle-outline"></ion-icon> Information</li>
+            <li><ion-icon name="settings-outline"></ion-icon> Settings</li>
+            <li><ion-icon name="create-outline"></ion-icon> Edit Profile</li>
+            <!-- Ajouter un profil d'utilisateur -->
+            <li><ion-icon name="person-circle-outline"></ion-icon> Add User</li>
+        </ul>
+        <!-- Bouton pour changer de thème -->
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<head>
+  <!-- Lien vers la bibliothèque Ionicons -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+  <div class="search-container">
+    <ion-icon name="search-outline"></ion-icon>
+    <input type="text" placeholder="Rechercher...">
+  </div>
+</body>
+
+<body>
+  <div class="search-container">
+    <ion-icon name="search-outline"></ion-icon>
+    <input type="text" placeholder="Rechercher...">
+  </div>
+
+  <button onclick="moveSearch()">Rechercher</button>
+</body>
+
+      <span></span>
+    </div>
+  </a>
+</div>
